@@ -1,0 +1,32 @@
+'''
+My first original idea for a project.
+Presenting my Rick and Morty episode ranomizer.
+Run the code and get a random episode to watch.
+- originally coded on SoloLearn -
+version 1.1.2
+'''
+
+import random
+
+#Season Number = snum
+snum = random.randint(1,4)
+
+#Episode Number = epnum
+#Season One has an extra episode
+#Season Four is still being aired
+
+if snum == 1:
+    epnum = (random.randint(1,11))
+elif snum == 2 or snum:
+    epnum = (random.randint(1,10))
+elif snum == 4:
+    epnum = (random.randint(1,5))
+    
+print ("Season "+str(snum))
+print("Episode "+str(epnum))
+
+epchoice = []
+
+epchoice.append(snum)
+epchoice.append(epnum)
+print(epchoice)
